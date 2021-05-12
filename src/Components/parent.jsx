@@ -4,14 +4,15 @@ import Child1 from './child1';
 import "./child1.css";
 function Parent() {
 return(
-  
-  <div className="parent"> {project_data.map((e)=>(
-    <div>
+  <>
+  <div className='listItem'>{project_data.map((e)=>(
+    <div className='parent'>
       <Child1 props={e}/>
-    </div>  
+    </div>
   )
-  )}
-  </div>
-)
+  )}</div> 
+ </>
+)     
 }
+
 export default Parent;

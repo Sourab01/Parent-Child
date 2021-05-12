@@ -3,11 +3,15 @@ import "./child1.css";
 
 function Child1({props}){
 return(
-    <div className='child1'>
-        <span className="sou1">{props.id}</span>
-        <span className="sou1">{props.name}</span>
-        <span className="sou1">{props.created_date}</span>
+    <>
+    
+    <div className='listItem'>
+    <div className='listItemData listItemTitle'>{props.name}</div>
     </div>
+    <div>
+    <div className='listItemData'>{props.created_date}</div>
+    </div>
+    </>
 )
 }
 export default Child1;
